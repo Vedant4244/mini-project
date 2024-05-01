@@ -1,0 +1,11 @@
+<p>Welcome to Registration Page!</p>
+<a routerLink="/login">Already have an account? Login here</a>
+
+<form (ngSubmit)="registerUser()">
+  <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" placeholder="Username"><br>
+  <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" placeholder="email"><br>
+  <input type="text" [(ngModel)]="phone" [ngModelOptions]="{standalone: true}" placeholder="phone"><br>
+  <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" placeholder="Password"><br>
+  <button type="submit">Register</button>
+</form>
+

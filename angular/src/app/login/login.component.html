@@ -1,0 +1,9 @@
+<p>Welcome to Login Page!</p>
+<a routerLink="/register">Don't have an account? Register here</a>
+
+<form (ngSubmit)="login()">
+  <input type="text" [(ngModel)]="username" [ngModelOptions]="{ standalone: true }" placeholder="Username"><br>
+  <input type="password" [(ngModel)]="password" [ngModelOptions]="{ standalone: true }" placeholder="Password"><br>
+  <button type="submit">Login</button>
+</form>
+
