@@ -1,0 +1,4 @@
+sudo systemctl start sshd
+sudo systemctl enable sshd
+sudo lsof -i :22
+sudo apt purge openssh-server   # For Ubuntu/Debian
